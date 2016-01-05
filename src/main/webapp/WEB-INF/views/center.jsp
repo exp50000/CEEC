@@ -356,7 +356,9 @@
 			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
 				<a data-toggle="modal" data-target="#myModal2"><img src="pic/search6.png" class="img-responsive"></a>
 			</div>
-			 <!-- Modal -->
+			
+			
+	  <!-- Modal -->
       <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -374,6 +376,7 @@
                 <div class="form-group">
                     <input type="date" class="form-control" id="exampleInputBirth" name="birth" placeholder="出生年月日">
                 </div>
+               </div> 
                 <div class="form-group">       
                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                   <button type="submit" class="btn btn-primary">確認</button>
@@ -451,6 +454,7 @@
                 <div class="form-group">
                     <input type="date" class="form-control" id="exampleInputBirth" name="birth" placeholder="出生年月日">
                 </div>
+               </div>
                 <div class="form-group">       
                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                   <button type="submit" class="btn btn-primary">確認</button>
