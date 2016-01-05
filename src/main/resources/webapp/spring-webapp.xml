@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans	
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+ 
+ 	<bean id="articleCategoryDAO" class="com.practice.webapp.dao.impl.ArticleCategoryDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="TestRoomDAO" class="com.practice.webapp.dao.impl.TestRoomDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+ 	<bean id="articleDAO" class="com.practice.webapp.dao.impl.ArticleDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+ 	<bean id="productDAO" class="com.practice.webapp.dao.impl.ProductDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="QueryDAO" class="com.practice.webapp.dao.impl.QueryDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+ 	<bean id="purchaseOrderDAO" class="com.practice.webapp.dao.impl.PurchaseOrderDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="salesOrderDAO" class="com.practice.webapp.dao.impl.SalesOrderDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	  <bean id="RegisterDAO" class="com.practice.webapp.dao.impl.RegisterDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="ApplyDAO" class="com.practice.webapp.dao.impl.ApplyDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="AdminDAO" class="com.practice.webapp.dao.impl.AdminDAOImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+  	<bean id="shoppingCart" class="com.practice.webapp.entity.ShoppingCart" scope="session">
+		<aop:scoped-proxy/>
+    </bean>
+
+  	<bean id="account" class="com.practice.webapp.entity.Account" scope="session">
+		<aop:scoped-proxy/>
+    </bean>
+    
+    <bean id="examinee" class="com.practice.webapp.entity.Examinee" scope="session">
+		<aop:scoped-proxy/>
+    </bean>
+    
+    <bean id="admin" class="com.practice.webapp.entity.Admin" scope="session">
+		<aop:scoped-proxy/>
+    </bean>
+    <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
+    <property name="scopes">
+        <map>
+            <entry key="session">
+                <!-- org.springframework.context.support.SimpleThreadScope -->
+                <bean class="org.springframework.web.context.request.SessionScope"/>
+            </entry>
+        </map>
+    </property>
+</bean>
+    
+</beans>
