@@ -35,7 +35,7 @@ public class AccountController {
 		}
 		else{
 			view = new ModelAndView("signin");
-			view.addObject("message", "登入失敗");
+			view.addObject("message", "＊錯誤的帳號或密碼");
 			System.out.println(examinee.getEmail());
 			System.out.println(examinee.getPassword());
 			System.out.println("failed!");

@@ -63,12 +63,12 @@ http://www.templatemo.com/tm-467-easy-profile
         <div class="test-data">
           <div class="row test-data-content">
             <h2 class="shadow">基本資料填寫</h2>
-            <label class="label label-warning">${warning}</label>
+            <label class="label-warn">${warning}</label>
             <hr>
             <form class="form-horizontal" role="form" action="register" method="post">
               <div class="form-group">
                 <label class="col-sm-4 control-label">E-Mail</label>
-                <label class="label label-warning">${message2}</label>
+                <label class="label-warn">${message2}</label>
                 <div class="col-sm-8">
                   <input type="email" class="form-control" name="email">
                 </div>

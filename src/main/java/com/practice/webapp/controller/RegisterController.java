@@ -88,6 +88,12 @@ public class RegisterController {
 		  model.addObject("emercontact",examinee_temp.getEmergencyContact());
 		  model.addObject("emerrela",examinee_temp.getEmergencyContactRelationship());
 		  model.addObject("emermobile",examinee_temp.getEmergencyContactMobile());
+		  if(examinee_temp.getLowincome()==0){
+			  model.addObject("lowincome", "否");
+		  }
+		  else{
+		      model.addObject("lowincome", "是");  
+		  }
 		  
 		  
 		  return model;
@@ -131,10 +137,10 @@ public class RegisterController {
 	  model.addObject("emerrela",examinee_temp.getEmergencyContactRelationship());
 	  model.addObject("emermobile",examinee_temp.getEmergencyContactMobile());
 	  if(examinee_temp.getLowincome()==0){
-	  model.addObject("lowincome", "否");
+		  model.addObject("lowincome", "否");
 	  }
 	  else{
-      model.addObject("lowincome", "是");  
+		  model.addObject("lowincome", "是");  
 	  }
 	  
 	  return model;
@@ -186,7 +192,7 @@ public class RegisterController {
 		Examinee examinee_session = (Examinee)context.getBean("examinee");
 		examinee_session.setEmail("");
 		examinee_session.setPassword("");
-		view.addObject("message", "登出成功");
+		view.addObject("message", "登出成功，歡迎再次登入");
 		return view;
 		
 	

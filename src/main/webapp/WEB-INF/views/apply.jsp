@@ -48,7 +48,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">${message}，你好</a>
               <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">修改個人資料</a></li>
+                  <li><a href="modify">修改個人資料</a></li>
                   <li><a data-toggle="modal" data-target="#myModal">准考證查詢</a></li>
                   <li><a data-toggle="modal" data-target="#myModal2">成績查詢</a></li>
                   <li><a href="logout">登出</a></li>
@@ -153,14 +153,21 @@
       
       
 	<!-- --/container ----><!-- --/social ---->
-  <div id="footerwrap">
+      <div id="footerwrap">
 		<div class="container">
 			<div class="row centered">
-				<div class="col-lg-2">
-					<p><b>&copy; 大學入學考試中心</b></p>
+				<div class="col-lg-4">
+					<p><b>版權所有 大學入學考試中心</b></p>
 				</div>
-				<div class="col-lg-10">
-          <p>總機:(02)2366-1416&nbsp;&nbsp;語音查詢:(02)2364-3677 &nbsp;&nbsp;傳真:(02)2362-0755&nbsp;&nbsp;地址:10673 台北市舟山路237號</p>
+			
+				<div class="col-lg-4">
+					<p>http://www.ceec.edu.tw/</p>
+				</div>
+				<div class="col-lg-4">
+          <p>總機：(02)2366-1416</p>
+          <p>語音查詢：(02)2364-3677</p>
+          <p>傳真：(02)2362-0755</p>
+          <p>地址：10673 台北市舟山路237號</p>
 				</div>
 			</div>
 		</div>

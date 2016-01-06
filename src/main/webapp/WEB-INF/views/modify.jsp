@@ -70,7 +70,6 @@ http://www.templatemo.com/tm-467-easy-profile
             <hr>
             <form class="form-horizontal" role="form" action="modifyData" method="post">
              
-              <hr>
               <div class="form-group">
                 <label class="col-sm-4 control-label">姓名</label>
                 <div class="col-sm-8">
@@ -118,10 +117,8 @@ http://www.templatemo.com/tm-467-easy-profile
               <div class="form-group">
                 <label class="col-sm-4 control-label">是否為低收入戶</label>
                 <div class="col-sm-8">
-                  <select class="form-control" name="lowincome" >
-                  <option value="0">是</option>
-                  <option value="1">否</option>
-                  </select>
+                  <input type="text" class="form-control" value="${lowincome}" name="Lowincome" disabled>
+                  
                   
                 </div>
               </div>

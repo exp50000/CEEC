@@ -339,7 +339,8 @@
                 <div class="form-group">
                     <input type="text" class="form-control" id="exampleInputPwd" name="ID" placeholder="身分證字號">
                 </div>
-                <div class="form-group">
+                <div class="form-group input-group">
+                	<span class="input-group-addon">生日</span>
                     <input type="date" class="form-control" id="exampleInputBirth" name="birth" placeholder="出生年月日">
                 </div>
               </div>
@@ -373,7 +374,8 @@
                 <div class="form-group">
                     <input type="text" class="form-control" id="exampleInputPwd" name="ID" placeholder="身分證字號">
                 </div>
-                <div class="form-group">
+                <div class="form-group input-group">
+                	<span class="input-group-addon">生日</span>
                     <input type="date" class="form-control" id="exampleInputBirth" name="birth" placeholder="出生年月日">
                 </div>
                </div> 
@@ -384,29 +386,43 @@
               </form>
             </div>
           </div>
-          
-          
-          
-        </div> 
-        
-        
-        
-        
-        
-        
+        </div>    
       </div>
       <!--modal end -->
       
-      
-      
-			
-			
-			
-		</div><!-- --/row ---->
-		
-		
-		
-		
+      <!-- Modal -->
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">進度查詢</h4>
+            </div>
+            <div class="modal-body">
+              
+              <form class="form-horizontal" role="form" action="progressquery" method="post">
+              <div class="modal-container">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputPwd" name="ID" placeholder="身分證字號">
+                </div>
+                <div class="form-group input-group">
+                	<span class="input-group-addon">生日</span>
+                    <input type="date" class="form-control" id="exampleInputBirth" name="birth" placeholder="出生年月日">
+                </div>
+               </div>
+                <div class="form-group">       
+                  <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                  <button type="submit" class="btn btn-primary">確認</button>
+                </div>            
+               </form>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <!--modal end -->
+     
+						
+		</div><!-- --/row ---->	
 	</div><!-- --/container ---->
 	
 	
@@ -435,36 +451,6 @@
 		</div>
 	</div><!-- --/footerwrap ----><!-- Bootstrap core JavaScript
     ================================================== --><!-- Placed at the end of the document so the pages load faster --><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="js/bootstrap.min.js"></script>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel">進度查詢</h4>
-            </div>
-            <div class="modal-body">
-              
-              <form class="form-horizontal" role="form" action="progressquery" method="post">
-              <div class="modal-container">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputPwd" name="ID" placeholder="身分證字號">
-                </div>
-                <div class="form-group">
-                    <input type="date" class="form-control" id="exampleInputBirth" name="birth" placeholder="出生年月日">
-                </div>
-               </div>
-                <div class="form-group">       
-                  <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                  <button type="submit" class="btn btn-primary">確認</button>
-                </div>            
-              </form>
-            </div>
-          </div>
-        </div> 
-      </div>
-      <!--modal end -->
       
   </body>
   

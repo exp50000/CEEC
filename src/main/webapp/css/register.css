@@ -39,7 +39,6 @@ h2 {
 .navbar {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-family: Microsoft JhengHei;
 }
 
 .navbar-brand {
@@ -394,4 +393,8 @@ header hr {
 
 .btn-control {
   border: 0;
+}
+
+.label-warn {
+  color: red;	
 }

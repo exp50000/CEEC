@@ -38,20 +38,19 @@
       <form class="form-signin" action="login" method="post" role="form">
         <h2 class="form-signin-heading"></h2>
         <label for="ID" class="sr-only">身分證字號</label>
-        <input type="text" name="email" class="form-control" placeholder="Email" required autofocus>
+        <input type="text" name="email" class="form-control" placeholder="電子郵件信箱" required autofocus>
         <label for="inputPassword" class="sr-only">密碼</label>
         <input type="password" name="password" class="form-control" placeholder="密碼" required>
-        <center>
-        <a class="push btn btn-lg btn-warning widthchg" role="button" href="admin">後台</a>
+        <label class="label label-warning">${message}</label>
+        <center>      
           <a class="push btn btn-lg btn-warning widthchg" role="button" href="register">填寫資料註冊</a>
           <button class="push btn btn-lg btn-primary widthchg2" type="submit">登入</button>
-          <label class="label label-warning">${message}</label>
         </center>
       </form>
 
       <center>
         <div class="foot">
-          <p>&copy; 大學入學考試中心</p>
+          <p>&copy; 大學入學考試中心 𐄁 <a href="admin">後台管理</a></p>
         </div>
       </center>
 
